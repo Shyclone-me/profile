@@ -741,3 +741,79 @@ h2 {
 section {
     animation: fadeInUp 1s ease-out;
 }
+/* mobile-------------------------- */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 80px 20px;
+        flex-direction: column;
+    }
+
+    .name {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .subline {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .avatar-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .skill-cards, .project-cards, .milestone-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .skill-card, .project-card, .milestone-card, .contact-card {
+        width: 90%;
+    }
+
+    .project-cards a {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .contact-card p {
+        font-size: 0.9rem;
+        word-wrap: break-word;
+    }
+
+    /* Disable or tone down background animations for performance */
+    .matrix-rain,
+    .floating-icons,
+    .particles {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 1.6rem;
+    }
+    .title {
+        font-size: 1rem;
+    }
+    .subline {
+        font-size: 0.9rem;
+    }
+    .avatar-img {
+        width: 80px;
+        height: 80px;
+    }
+}
